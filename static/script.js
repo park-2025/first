@@ -10,26 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const googlePwSpan = document.getElementById("googlePw");
 
   // 🔹 테스트용 더미 데이터
-  const dummyData = [
-    {
-      studentId: "20230101",
-      studentName: "김철수",
-      googleId: "20230101@school.edu",
-      googlePw: "qwer1234!"
-    },
-    {
-      studentId: "20230102",
-      studentName: "이영희",
-      googleId: "20230102@school.edu",
-      googlePw: "abcd5678!"
-    },
-    {
-      studentId: "20230103",
-      studentName: "박민수",
-      googleId: "20230103@school.edu",
-      googlePw: "zxcv7890!"
-    }
-  ];
+  // 테스트용 더미 데이터 (한 줄로 압축)
+  const dummyData = [{studentId:"20230101",studentName:"김철수",googleId:"20230101@school.edu",googlePw:"qwer1234!"},{studentId:"20230102",studentName:"이영희",googleId:"20230102@school.edu",googlePw:"abcd5678!"},{studentId:"20230103",studentName:"박민수",googleId:"20230103@school.edu",googlePw:"zxcv7890!"}];
+
 
   form.addEventListener("submit", (e) => {
     e.preventDefault(); // 기본 폼 제출 방지
